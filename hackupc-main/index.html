@@ -1,0 +1,174 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountryGuesser</title>
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/firework.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Kavoon&family=Lilita+One&display=swap" rel="stylesheet">
+    <script src="./JSON/dades.json"></script>
+
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">Country Guesser</h1>
+        <h2 id="intro">Let's see if you can guess me...</h2>
+        <div id="hint0" class="hints">
+            <h3 id="pregunta0" class="preguntas"></h3>
+            <form>
+                <input type="text" class="answer" id="texto0" placeholder="Answer" pattern="^[A-Za-z ]+$" required/>
+            </form>
+        </div>
+
+        <div id="hint1" class="hints">
+            <h3 id="pregunta1" class="preguntas"></h3>
+            <form>
+                <input type="text" class="answer" id="texto1" placeholder="Answer" pattern="^[A-Za-z ]+$" required/>
+            </form>
+        </div>
+
+        <div id="hint2" class="hints">
+            <h3 id="pregunta2" class="preguntas"></h3>
+            <form>
+                <input type="text" class="answer" id="texto2" placeholder="Answer" pattern="^[A-Za-z ]+$" required/>
+            </form>
+        </div>
+
+        <div id="hint3" class="hints">
+            <h3 id="pregunta3" class="preguntas"></h3>
+            <form>
+                <input type="text" class="answer" id="texto3" placeholder="Answer" pattern="^[A-Za-z ]+$" required/>
+            </form>
+        </div>
+
+        <div id="hint4" class="hints">
+            <h3 id="pregunta4" class="preguntas"></h3>
+            <form>
+                <input type="text" class="answer" id="texto4" placeholder="Answer" pattern="^[A-Za-z ]+$" required/>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+    <div id="winHtml">
+        <h1 id="title">Country Guesser</h1>
+        <h2 id="winDescription">You have found me!</h2>
+        <h3 id="countryReveal"></h3>
+        <h3 id="yourScore" class="scores">Your score:</h3>
+        <h3 class="scores" id="maxScore"></h3>
+        <button id="playAgain">Play Again</button>
+    </div>
+    <div id="loseHtml">
+        <h1 id="title">Country Guesser</h1>
+        <h2 id="loseDescription">Game Over :(</h2>
+        <h3 id="countryReveal"></h3>
+        <h3 class="scores" id="yourScore"></h3>
+        <h3 class="scores" id="maxScore"></h3>
+        <button id="playAgain">Play Again</button>
+    </div>
+
+
+    <div class="fireworks" id="firework1">
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+    </div>
+    <div class="fireworks" id="firework2">
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+    </div>
+    <div class="fireworks" id="firework3">
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+    </div>
+    <div class="fireworks" id="firework4">
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+    </div>
+    <div class="fireworks" id="firework5">
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+    </div>
+    <div class="fireworks" id="firework6">
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+    </div>
+    <div class="fireworks" id="firework7">
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+    </div>
+</html>

@@ -1,0 +1,147 @@
+var auxiliar = {
+    "0":{
+        "country" : "Spain",         
+        "residents": "47M" ,
+        "continent": "Europe",
+        "coast": 0,
+        "flag": "red",
+        "initial" : "M",  
+    } ,
+    
+    "1":{
+        "country": "Uruguay",        
+        "residents": "3.5M",
+        "continent": "South America",
+        "coast": 1,
+        "flag": "blue",
+        "initial" : "M",         
+    } ,
+
+    "2":{
+        "country": "Estonia",         
+        "residents": "1.3M" ,
+        "continent": "Europe",
+        "coast": 1,
+        "flag": "black",
+        "initial" : "T"
+    } , 
+
+    "3":{
+        "country": "Italy",        
+        "residents": "60M" ,
+        "continent": "Europe",
+        "coast": 1,
+        "flag": "white",
+        "initial" : "R"
+    } , 
+
+    "4":{
+        "country": "Japan",        
+        "residents": "125M" ,
+        "continent": "Asia",
+        "coast": 1,
+        "flag": "red",
+        "initial" : "T"
+    },
+    "5":{
+        "country": "Chad",        
+        "residents": "16M",
+        "continent": "Africa",
+        "coast": 0,
+        "flag": "yellow",
+        "initial" : "Y"
+    },
+    "6":{
+        "country": "Mongolia",        
+        "residents": "3.2M",
+        "continent": "Asia",
+        "coast": 0,
+        "flag": "red",
+        "initial" : "U"
+    },
+    "7":{
+        "country": "Canada",        
+        "residents": "38M",
+        "continent": "North America",
+        "coast": 1,
+        "flag": "red",
+        "initial" : "O"
+    },
+    "8":{
+        "country": "Brazil",        
+        "residents": "212M",
+        "continent": "South America",
+        "coast": 1,
+        "flag": "green",
+        "initial" : "B"
+    },
+    "9":{
+        "country": "Puerto Rico",        
+        "residents": "3.2M",
+        "continent": "North America",
+        "coast": 1,
+        "flag": "red",
+        "initial" : "S"
+    },
+    "10":{
+        "country": "Belgium",        
+        "residents": "11M",
+        "continent": "Europe",
+        "coast": 1,
+        "flag": "yellow",
+        "initial" : "B"
+    },
+    "11":{
+        "country": "Australia",        
+        "residents": "25M",
+        "continent": "Oceania",
+        "coast": 1,
+        "flag": "blue",
+        "initial" : "C"
+    },
+    "12":{
+        "country": "Indonesia",        
+        "residents": "273M",
+        "continent": "Asia",
+        "coast": 1,
+        "flag": "white",
+        "initial" : "J"
+    },
+    "13":{
+        "country": "Nigeria",        
+        "residents": "206M",
+        "continent": "Africa",
+        "coast": 1,
+        "flag":"green",
+        "initial" : "A"
+    },
+    "14":{
+        "country": "Sudan",        
+        "residents": "43M",
+        "continent": "Africa",
+        "coast": 1,
+        "flag": "black",
+        "initial" : "K"
+    },
+    "15":{
+        "country": "Mali",        
+        "residents": "20M",
+        "continent": "Africa",
+        "coast": 0,
+        "flag": "yellow",
+        "initial" : "B"
+    },
+
+    "Preguntas" : {
+        "0": "The population of the country is ", 
+        "1": "The continent of the country is ",
+        "2":{
+            "0":"The country does not have coast",
+            "1":"The country has coast"
+        }, 
+        "3": "The countrys flag has the color ",
+        "4": "The initial of the capital of its country is "
+    }
+
+    
+}

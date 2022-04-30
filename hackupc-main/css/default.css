@@ -1,0 +1,119 @@
+body{
+    position: relative;
+    min-height: 100vh;
+    background: url('./media/315542-drawing-Earth-space.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    margin: 0;
+}
+
+#container{
+    max-width: 60%;
+    border-radius: 30px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    border: 4px solid black;
+    margin: auto;
+    background-color:rgba(255, 255, 255, 0.7);
+    box-shadow: 7px 7px black;
+    padding: 0 5rem;
+}
+
+#title{
+    font-family: 'Kavoon',cursive;
+    color:darkblue;
+    text-shadow: 0 0 25px aqua;
+    font-size: 50px;
+}
+#intro{
+    font-family:'Lilita One', cursiv;
+    font-size: 30px;
+}
+
+
+.preguntas{
+    font-family: 'Bubblegum Sans', cursive;
+    padding-top: 30px;
+}
+
+.hints form input[type="text"]{
+    text-align: center;
+    outline: none;
+    padding: 15px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #BBDEFB;
+}
+
+.hints form input[type="text"]::placeholder{
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+
+.error{
+    -webkit-animation: tembleke 0.6s 1;
+  }
+  @-webkit-keyframes tembleke{
+    0%{-webkit-transform:translate(0px,0px);}
+    10%{-webkit-transform:translate(20px,0px);}
+    20%{-webkit-transform:translate(0px,0px);}
+    30%{-webkit-transform:translate(20px,0px);}
+    40%{-webkit-transform:translate(0px,0px);}
+    50%{-webkit-transform:translate(20px,0px);}
+    60%{-webkit-transform:translate(0px,0px);}
+    70%{-webkit-transform:translate(20px,0px);}
+    80%{-webkit-transform:translate(0px,0px);}
+    90%{-webkit-transform:translate(20px,0px);}
+    100%{-webkit-transform:translate(0px,0px);}
+  }
+
+
+#winDescription{
+    font-family:'Lilita One', cursiv;
+    font-size: 30px;
+    color: darkgreen;
+    text-shadow: 0 0 25px greenyellow;
+}
+#countryReveal{
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+#winHtml h3{
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+#loseDescription{
+    font-family:'Lilita One', cursiv;
+    font-size: 30px;
+    color: darkred;
+    text-shadow: 0 0 25px red;
+}
+
+.scores{
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+#playAgain{
+    margin: 10px;
+    background-color: blue;
+    border-radius: 5px;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Bubblegum Sans', cursive;
+    border-radius: 25px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border: 1px solid darkblue;
+    color: white
+}
+
+#playAgain:hover{
+    background-color: white;
+    color: black;
+}
